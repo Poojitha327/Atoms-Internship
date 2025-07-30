@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      background-color: #aed581;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1em;
+    }
+
+    nav a {
+      color: #004d40;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex: 1;
+      padding: 30px;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    aside {
+      flex: 1;
+      min-width: 250px;
+      background-color: #f0f4c3;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    main {
+      flex: 2;
+      min-width: 300px;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 15px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #33691e;
+      border-bottom: 2px solid #c5e1a5;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #2e7d32;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-top: 10px;
+    }
+
+    footer {
+      background-color: #a5d6a7;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      nav {
+        display: block;
+        margin-top: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>POOJITHA</h1>
+    <p>Web Developer | VLSI Enthusiast | Data Scraper</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside>
+      <h2>Quick Links</h2>
+      <ul>
+        <li><a href="#about">👤 About Me</a></li>
+        <li><a href="#skills">🛠️ Skills</a></li>
+        <li><a href="#projects">💻 Projects</a></li>
+        <li><a href="#contact">📬 Contact</a></li>
+      </ul>
+    </aside>
+
+    <main>
+<section id="about">
+  <h2>👤 About Me</h2>
+  <p>I am an Electronics and Communication Engineering student passionate about VLSI design, embedded systems, and data-driven applications. I enjoy combining hardware with programming and love learning new technologies to solve real-world problems.</p>
+  <p>I also have a strong interest in Web Development. I enjoy creating clean, responsive, and user-friendly websites using HTML, CSS, JavaScript, and modern tools. I am continuously exploring new trends in frontend design and full-stack development.</p>
+</section>
+
+
+      <section id="skills">
+        <h2>🛠️ Skills</h2>
+        <ul>
+          <li><strong>Programming Languages:</strong> Python, C, Verilog/VHDL, MATLAB, Assembly Language</li>
+          <li><strong>Tools and Software:</strong> Mentor Graphics, MATLAB Simulink, Xilinx Vivado</li>
+          <li><strong>Concepts:</strong> Digital Signal Processing, VLSI Design</li>
+          <li><strong>Soft Skills:</strong> Problem Solving, Team Work, Good Communication, Adaptability</li>
+        </ul>
+      </section>
+
+      <section id="projects">
+        <h2>💻 Projects</h2>
+
+        <h3> Rain Detector Using Arduino (01/2024 – 07/2024)</h3>
+        <p>This project is designed to detect rainfall using a rain sensor module connected to an Arduino. It helps users in agriculture or households to act quickly when rain begins and harvest water effectively.</p>
+        <ul>
+          <li> Uses a rain sensor to sense rain drops on its surface.</li>
+          <li> Alerts the user using an LED or buzzer when rain is detected.</li>
+          <li> Farmers can cover crops to avoid damage and collect rainwater for irrigation.</li>
+          <li> Encourages rainwater harvesting for household reuse.</li>
+          <li> Tools Used: Arduino Uno, Rain Sensor Module, Buzzer/LED, Jumper Wires, Breadboard</li>
+        </ul>
+
+        <h3> Web Scraping: Comparison of Cricket Teams using ESPN Cric-Info</h3>
+        <p>This project automates data extraction from ESPN Cric-Info to compare cricket teams and player performance. It involves scraping data using Python and analyzing it with libraries like Pandas and Matplotlib.</p>
+        <ul>
+          <li> Collected team stats, player scores, match histories, and rankings.</li>
+          <li> Data analyzed to compare team performance and generate insights.</li>
+          <li> Visualized performance trends using charts and graphs.</li>
+          <li> Tools Used: Python, BeautifulSoup, Requests, Pandas, Matplotlib</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>📬 Contact</h2>
+        <p>📧 Email: yourname@example.com</p>
+        <p>🔗 GitHub: <a href="#">github.com/yourname</a></p>
+        <p>🔗 LinkedIn: <a href="#">linkedin.com/in/yourname</a></p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    &copy; 2025 POOJITHA |
+  </footer>
+
+</body>
+</html>

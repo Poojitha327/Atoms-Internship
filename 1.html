@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('https://images.unsplash.com/photo-1508780709619-79562169bc64'); /* sample background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.95);
+      padding: 25px;
+      border-radius: 12px;
+      width: 350px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    }
+
+    fieldset {
+      border: none;
+      padding: 0;
+    }
+
+    legend {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    label {
+      margin-top: 10px;
+      display: block;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    .radio-group {
+      margin-top: 5px;
+    }
+
+    input[type="submit"] {
+      margin-top: 15px;
+      background-color: #0055aa;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #003f7f;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <fieldset>
+      <legend>Give Your Feedback</legend>
+
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="comments">Your Feedback:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Write your thoughts here..."></textarea>
+
+      <label for="reason">Reason for Contact:</label>
+      <select id="reason" name="reason">
+        <option value="feedback">Feedback</option>
+        <option value="suggestion">Suggestion</option>
+        <option value="complaint">Complaint</option>
+      </select>
+
+      <label>Are you a student?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="student" value="yes"> Yes</label>
+        <label><input type="radio" name="student" value="no"> No</label>
+      </div>
+
+      <input type="submit" value="Send Feedback">
+    </fieldset>
+  </form>
+
+</body>
+</html>
